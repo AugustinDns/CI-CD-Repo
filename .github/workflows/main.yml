@@ -23,4 +23,5 @@ jobs:
 
       # Build and test with Maven
       - name: Build and test with Maven
+        working-directory: simple-api
         run: mvn clean install
