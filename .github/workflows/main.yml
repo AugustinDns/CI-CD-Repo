@@ -23,7 +23,7 @@ jobs:
 
       # Build and test with Maven
       - name: Build and test with Maven
-        working-directory: simple-api
+        #working-directory: simple-api
         run: mvn -B verify sonar:sonar -Dsonar.projectKey=takitp_epftp3 -Dsonar.organization=takitp -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=${{ secrets.SONAR_TOKEN }}  --file ./simple-api/pom.xml
 
 
